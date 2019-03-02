@@ -3,7 +3,7 @@
 def printMessage(message):
     print(message)
 
-printMessage("welcome")
+printMessage("good afternoon")
 
 # ctrl + tab
 # ""가 있고 없고 변수 상수

@@ -1,6 +1,6 @@
 # 엑셀 fx
 # f(x) function
 def printHello():
-    print("hello")
+    print("bye")
 
 printHello()
