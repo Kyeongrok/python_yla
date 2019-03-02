@@ -2,7 +2,7 @@
 
 
 # 강의안
-https://github.com/Kyeongrok/
+https://github.com/Kyeongrok/python_crawler
 
 # youtube
 https://www.youtube.com/watch?v=PNpS2Id8qyc&list=PLAdQRRy4vtQRzdg7D9n1rkDp9DIeWpBQ9
