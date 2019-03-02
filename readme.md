@@ -6,3 +6,6 @@ https://github.com/Kyeongrok/
 
 # youtube
 https://www.youtube.com/watch?v=PNpS2Id8qyc&list=PLAdQRRy4vtQRzdg7D9n1rkDp9DIeWpBQ9
+
+# curriculum
+https://docs.google.com/spreadsheets/d/1oYeLTwmheqKArje0Reekanf7kd2d2RHeQUH18skIH4A/edit#gid=0
