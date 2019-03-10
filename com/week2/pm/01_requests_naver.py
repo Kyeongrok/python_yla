@@ -5,11 +5,11 @@ import requests
 # Install request package
 
 
-URL = 'http://www.naver.com'
+URL = 'http://www.naver.com/'
 print(URL)
 
 response = requests.get(URL)
 
-print(response.status_code)
+#print(response.status_code)
 
 print(response.text)
