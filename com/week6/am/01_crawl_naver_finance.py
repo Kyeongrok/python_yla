@@ -25,6 +25,7 @@ def parse(page_string):
     bsObj = BeautifulSoup(page_string, "html.parser")
     ul = bsObj.find("ul", {"class":"list_type1"})
     lis = ul.findAll("li")
+
     novelInfos = []
     for li in lis:
         novelInfos.append(getNovelInfo(li))
