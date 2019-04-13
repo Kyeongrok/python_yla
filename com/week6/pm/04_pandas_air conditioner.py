@@ -1,11 +1,21 @@
 import numpy as np
 import pandas as pd
+
+#https://www.coupang.com/np/search?component=&q=에어컨&channel=user
+
 f = open("./에어컨.json", "r")
 
 df = pd.read_json("./에어컨.json")
 
 # 전체 데이터 보기
 print(df)
+
+# 함수 만들어보기
+# 입력: 파일 이름
+# 출력: dataframe
+def create_dataframe(filename):
+    df = pd.read_json(filename)
+    return df
 
 # head
 #print(df.head())
@@ -55,5 +65,20 @@ print(df_samsung[df_samsung['price'] == 4000000])
 df_lg = df[df['name'].str.contains("LG")]
 # print(df_lg)
 
-# 삼성 에어컨에서 가격이 제일 낮은 에어컨 찾기
+# LG 에어컨에서 가격이 제일 낮은 에어컨 찾기
 print(df_lg['price'].min())
+print(df_lg[df_lg['price'] == 7330])
+print(df_lg[df_lg['price'] == 7330]['name'])
+# 가격이 제일 낮은 에어컨의 이름 찾기
+print(df_lg[df_lg['price'] == 7330]['name'].values[0])
+
+# 브랜드
+# 삼성전자, 캐리어, LG전자, 제너스, 대유위니아, 한솔일렉트로닉스, 대우전자, 보쉬,
+# 청호나이스, 에코벨, 아낙, 도비러비, 에이지, 신일, 미디어, 대우컴즈, 21센추리
+print("LG")
+print(df[df['name'].str.contains("LG")].count().values[0])
+
+# 브랜드별로 찾아보기
+
+# 가격별 정렬
+print(df.sort_values(by=['price']))
